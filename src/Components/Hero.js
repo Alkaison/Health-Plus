@@ -1,5 +1,7 @@
 import React from "react";
 import Doctor from "../Assets/doctor-picture.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCalendarCheck } from "@fortawesome/free-solid-svg-icons";
 import "../Styles/Hero.css";
 
 function Hero() {
@@ -17,7 +19,7 @@ function Hero() {
           On-demand healthcare services at your fingertips.
         </p>
         <button className="text-appointment-btn" type="button">
-          Book Appointment
+          <FontAwesomeIcon icon={faCalendarCheck} /> Book Appointment
         </button>
         <div className="text-stats">
           <div className="text-stats-container">

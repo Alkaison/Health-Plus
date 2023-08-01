@@ -1,4 +1,6 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCommentDots } from "@fortawesome/free-solid-svg-icons";
 import "../Styles/Navbar.css";
 
 function Navbar() {
@@ -36,7 +38,7 @@ function Navbar() {
           </a>
         </li>
       </ul>
-      <button className="navbar-btn" type="button">Live Chat</button>
+      <button className="navbar-btn" type="button"><FontAwesomeIcon icon={faCommentDots} /> Live Chat</button>
     </div>
   );
 }
