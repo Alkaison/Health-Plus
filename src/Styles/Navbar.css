@@ -1,0 +1,60 @@
+.navbar-section {
+    padding: 0 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    background-color: white;
+}
+.navbar-title a {
+    color: #1A8EFD;
+    letter-spacing: .6px;
+    text-decoration: none;
+}
+.navbar-title {
+    font-family: 'Segoe UI', sans-serif;
+}
+.navbar-sign {
+    color: #54de54;
+    font-family: Cambria, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+.navbar-items {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    font-family: 'Trebuchet MS', sans-serif;
+}
+.navbar-items > li {
+    list-style-type: none;
+}
+.navbar-links {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    letter-spacing: .8px;
+}
+.navbar-links:hover {
+    color: #0cc2ea;
+}
+.navbar-btn {
+    padding: 14px 20px;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 28px;
+    outline: transparent;
+    background-color: #1A8EFD;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', sans-serif;
+    letter-spacing: .8px;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+.navbar-btn:hover {
+    color: #1A8EFD;
+    background-color: white;
+    border: 1px solid #1A8EFD;
+}
