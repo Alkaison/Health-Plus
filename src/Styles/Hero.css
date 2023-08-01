@@ -1,0 +1,89 @@
+.hero-section {
+    height: calc(100vh - 80px);
+    padding: 0 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    background: linear-gradient(to right, #ECF2FF, #FBFCFF);
+}
+/* Text section */
+.text-section {
+    width: 60%;
+    padding: 0 32px;
+}
+.text-headline {
+    margin-bottom: 12px;
+    color: rgb(77, 75, 75);
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: .7px;
+}
+.text-title {
+    width: 500px;
+    color: black;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+.text-descritpion {
+    width: 475px;
+    margin: 32px 0;
+    color: rgb(77, 75, 75);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    letter-spacing: .7px;
+    line-height: 1.6rem;
+}
+.text-appointment-btn {
+    padding: 14px 20px;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 28px;
+    outline: transparent;
+    background-color: #1A8EFD;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', sans-serif;
+    letter-spacing: .8px;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+.text-appointment-btn:hover {
+    color: #1A8EFD;
+    background-color: transparent;
+    border: 1px solid #1A8EFD;
+}
+.text-stats {
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 64px;
+}
+.text-stats-container {
+    text-align: center;
+}
+.text-stats-container > p {
+    color: rgb(77, 75, 75);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    letter-spacing: .7px;
+}
+.text-stats-container p:first-child {
+    margin-bottom: 8px;
+    color: #1A8EFD;
+    font-family: Verdana, sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+}
+/* Image section */
+.image-section {
+    width: 40%;
+    max-width: 100%;
+    text-align: center;
+}
+.image1 {
+    width: 100%;
+    height: auto;
+}
