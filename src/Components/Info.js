@@ -20,42 +20,33 @@ function Info() {
       </div>
 
       <div className="info-cards-content">
-        <div className="info-cards">
-          <span className="info-card-icon"><FontAwesomeIcon className="info-fa-icon" icon={faTruckMedical} /></span>
-          <p className="info-card-title">Emergency Care</p>
-          <p className="info-card-description">
-            Our Emergency Care service is designed to be your reliable support
+        <CardInfo title="Emergency Care" description="Our Emergency Care service is designed to be your reliable support
             in critical situations. Whether it's a sudden illness, injury, or
             any medical concern that requires immediate attention, our team of
             dedicated healthcare professionals is available 24/7 to provide
-            prompt and efficient care.
-          </p>
-        </div>
+            prompt and efficient care." icon={faTruckMedical} />
 
-        <div className="info-cards">
-          <span className="info-card-icon"><FontAwesomeIcon className="info-fa-icon" icon={faHeartPulse} /></span>
-          <p className="info-card-title">Heart Disease</p>
-          <p className="info-card-description">
-            Our team of experienced cardiologists and medical experts use
+        <CardInfo title="Heart Disease" description="Our team of experienced cardiologists and medical experts use
             state-of-the-art technology to assess your cardiovascular health and
             design personalized treatment plans. From comprehensive screenings
             to advanced interventions, we are committed to helping you maintain
-            a healthy heart and lead a fulfilling life.
-          </p>
-        </div>
+            a healthy heart and lead a fulfilling life." icon={faHeartPulse} />
 
-        <div className="info-cards">
-          <span className="info-card-icon"><FontAwesomeIcon className="info-fa-icon" icon={faTooth} /></span>
-          <p className="info-card-title">Dental Care</p>
-          <p className="info-card-description">
-            Smile with confidence as our Dental Care services cater to all your
+        <CardInfo title="Dental Care" description="Smile with confidence as our Dental Care services cater to all your
             oral health needs. Our skilled dentists provide a wide range of
             treatments, from routine check-ups and cleanings to cosmetic
-            procedures and restorative treatments.
-          </p>
-        </div>
-
+            procedures and restorative treatments." icon={faTooth} />
       </div>
+    </div>
+  );
+}
+
+function CardInfo(props) {
+  return (
+    <div className="info-cards">
+      <span className="info-card-icon"><FontAwesomeIcon className="info-fa-icon" icon={props.icon} /></span>
+      <p className="info-card-title">{props.title}</p>
+      <p className="info-card-description">{props.description}</p>
     </div>
   );
 }
