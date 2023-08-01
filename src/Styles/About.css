@@ -1,0 +1,73 @@
+.about-section {
+    height: 100vh;
+    padding: 0 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    background: linear-gradient(to right, #ECF2FF, #FBFCFF);
+}
+/* Image */
+.about-image-content {
+    width: 50%;
+    max-width: 100%;
+    text-align: center;
+}
+.image1 {
+    width: 100%;
+    height: auto;
+}
+/* Text */
+.about-text-content {
+    width: 50%;
+}
+.about-title {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 40px;
+}
+.about-title > span {
+    position: relative;
+}
+.about-title span::before {
+    content: '';
+    position: absolute;
+    width: 75%;
+    height: 4px;
+    background-color: #9D2553;
+    left: 0;
+    bottom: -5px;
+}
+.about-description {
+    margin: 32px 0;
+    color: #4d4b4b;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    letter-spacing: .5px;
+    line-height: 1.5rem;
+}
+.about-text-title {
+    margin: 0 0 24px 0;
+    color: #4d4b4b;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+/* Steps */
+.about-text-step {
+    margin: 16px 0;
+}
+.about-text-sTitle {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+.about-text-description {
+    margin: 8px 24px;
+    color: #4d4b4b;
+    font-family: 'Segoe UI', sans-serif;
+    letter-spacing: .7px;
+    line-height: 1.4rem;
+}
+.fa-icon {
+    color: #9D2553;
+}
