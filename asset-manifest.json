@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Health-Plus/static/css/main.6f321a6a.css",
+    "main.js": "/Health-Plus/static/js/main.0c3b7834.js",
+    "static/media/doctor-picture.png": "/Health-Plus/static/media/doctor-picture.0261bb4efe7a9075c56a.png",
+    "static/media/doctor-group.png": "/Health-Plus/static/media/doctor-group.01394386d8270bd40bc1.png",
+    "index.html": "/Health-Plus/index.html",
+    "main.6f321a6a.css.map": "/Health-Plus/static/css/main.6f321a6a.css.map",
+    "main.0c3b7834.js.map": "/Health-Plus/static/js/main.0c3b7834.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6f321a6a.css",
+    "static/js/main.0c3b7834.js"
+  ]
+}
