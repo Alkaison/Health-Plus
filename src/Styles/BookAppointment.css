@@ -1,0 +1,80 @@
+.ba-section {
+    height: 100vh;
+    padding: 0 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    background-color: white;
+}
+/* Image */
+.ba-image-content {
+    width: 50%;
+    max-width: 100%;
+    text-align: center;
+}
+.image1 {
+    width: 75%;
+    height: auto;
+}
+/* Text */
+.ba-text-content {
+    width: 50%;
+}
+.ba-title {
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 40px;
+}
+.ba-title > span {
+    position: relative;
+}
+.ba-title span::before {
+    content: '';
+    position: absolute;
+    width: 75%;
+    height: 4px;
+    background-color: #9D2553;
+    left: 0;
+    bottom: -5px;
+}
+.ba-description {
+    margin: 32px 0;
+    color: #4d4b4b;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    letter-spacing: .5px;
+    line-height: 1.5rem;
+}
+/* Checks */
+.ba-checks {
+    margin: 28px 0;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: .7px;
+}
+.ba-check-first {
+    margin-top: 40px;
+}
+.ba-check-last {
+    margin-bottom: 40px;
+}
+/* Book Appointment Button */
+.ba-appointment-btn {
+    padding: 14px 20px;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: 28px;
+    outline: transparent;
+    background-color: #1A8EFD;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', sans-serif;
+    letter-spacing: .8px;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+.ba-appointment-btn:hover {
+    color: #1A8EFD;
+    background-color: transparent;
+    border: 1px solid #1A8EFD;
+}
