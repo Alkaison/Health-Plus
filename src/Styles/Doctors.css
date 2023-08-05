@@ -16,7 +16,7 @@
 .dt-title span::before {
     content: '';
     position: absolute;
-    width: 50%;
+    width: 64%;
     height: 4px;
     background-color: #9D2553;
     border-radius: 8px;

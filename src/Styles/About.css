@@ -34,8 +34,9 @@
     width: 75%;
     height: 4px;
     background-color: #9D2553;
+    border-radius: 8px;
     left: 0;
-    bottom: -5px;
+    bottom: -12px;
 }
 .about-description {
     margin: 32px 0;
