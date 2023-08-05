@@ -1,0 +1,97 @@
+.footer-container {
+    height: auto;
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: white;
+    background-color: #1B2433;
+    /* border: 1px solid red; */
+}
+/* Title */
+.ft-title {
+    color: #1A8EFD;
+    text-decoration: none;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: .7px;
+}
+.ft-sign {
+    color: #1ECAB0;
+    font-family: Cambria, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+.ft-description {
+    width: 420px;
+    margin: 16px 0 40px;
+    color: #D0D3DA;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    letter-spacing: .8px;
+    line-height: 1.9rem;
+}
+.ft-input-title {
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: .8px;
+}
+.ft-input {
+    width: 300px;
+    margin: 20px 8px 0 0;
+    padding: 15px 22px;
+    color: white;
+    background-color: #293241;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    outline: transparent;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    letter-spacing: .7px;
+}
+.ft-btn {
+    padding: 12px 18px;
+    color: white;
+    border: 2px solid transparent;
+    border-radius: 50px;
+    outline: transparent;
+    background-color: #1A8EFD;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: .8px;
+    cursor: pointer;
+    transition: all .4s ease;
+}
+.ft-btn:hover {
+    color: #1A8EFD;
+    background-color: white;
+    border: 2px solid #1A8EFD;
+}
+/* Lists */
+.ft-list-title {
+    margin: 16px 0;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: .7px;
+}
+.ft-list-items {
+    list-style-type: none;
+}
+.ft-list-items li {
+    margin: 24px 0;
+    color: #a5a7ac;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: .7px;
+}
+/* CopyRight */
+.ft-copyright {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

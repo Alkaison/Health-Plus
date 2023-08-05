@@ -6,6 +6,7 @@ import Info from "./Components/Info";
 import About from "./Components/About";
 import BookAppointment from "./Components/BookAppointment";
 import Doctors from "./Components/Doctors";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <About />
       <BookAppointment />
       <Doctors />
+      <Footer />
     </div>
   );
 }
