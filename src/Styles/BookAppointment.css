@@ -1,6 +1,6 @@
 .ba-section {
-    height: 100vh;
-    padding: 0 32px;
+    /* height: 100vh; */
+    padding: 32px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,7 +14,7 @@
     text-align: center;
 }
 .ba-image1 {
-    width: 75%;
+    width: 80%;
     height: auto;
 }
 /* Text */
@@ -78,4 +78,22 @@
     color: #1A8EFD;
     background-color: transparent;
     border: 1px solid #1A8EFD;
+}
+/* Responsive */
+@media screen and (max-width: 1000px) {
+    .ba-section {
+        display: block;
+    }
+    .ba-image-content {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 0 32px 0;
+    }
+    .ba-text-content {
+        width: 100%;
+    }
+    .ba-image1 {
+        width: 80%;
+        height: 80%;
+    }
 }
