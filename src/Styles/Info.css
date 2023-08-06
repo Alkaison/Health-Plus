@@ -1,5 +1,4 @@
 .info-section {
-    height: 100vh;
     padding: 0 32px;
     text-align: center;
     background-color: white;
@@ -53,6 +52,7 @@
     font-family: 'Segoe UI', sans-serif;
     font-size: 28px;
     font-weight: bold;
+    letter-spacing: .7px;
 }
 .info-card-description {
     margin: 24px;
@@ -73,4 +73,24 @@
 .info-fa-icon {
     color: #2C96FF;
     font-size: 24px;
+}
+/* Responsive */
+@media screen and (max-width: 1000px) {
+    .info-card-title {
+        font-weight: normal;
+    }
+    .info-description {
+        margin: 64px 32px;
+    }
+    .info-cards-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media screen and (max-width: 700px) {
+    .info-description {
+        margin: 64px 8px;
+    }
+    .info-cards-content {
+        grid-template-columns: repeat(1, 1fr);
+    }
 }
