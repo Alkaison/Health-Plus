@@ -1,0 +1,111 @@
+.review-section {
+    padding: 64px 32px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    background: linear-gradient(to right, #ECF2FF, #FBFCFF);
+}
+.rw-image-content {
+    width: 50%;
+    max-width: 100%;
+    text-align: center;
+}
+.rw-image1 {
+    width: 90%;
+    height: auto;
+}
+/* Text */
+.rw-text-content {
+    width: 50%;
+}
+.rw-text-title {
+    margin: 16px 0;
+    color: #6F7074;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: .6px;
+}
+.rw-text-num {
+    color: #178BFF;
+}
+.rw-text-desc {
+    width: 400px;
+    margin: 16px 0;
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+    letter-spacing: .6px;
+    line-height: 2.6rem;
+    text-transform: capitalize;
+}
+.rw-text-format {
+    width: 600px;
+    margin: 64px 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+.rw-text-quote1 {
+    position: absolute;
+    top: -18px;
+    left: -24px;
+    color: #178BFF;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+.rw-text-quote2 {
+    position: absolute;
+    right: -18px;
+    bottom: -24px;
+    color: #178BFF;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+.rw-review {
+    display: block;
+    margin: 0 0 0 8px;
+    color: black;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 24px;
+    letter-spacing: .7px;
+    line-height: 2.2rem;
+}
+.rw-authors {
+    width: 600px;
+    margin: 0 0 0 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.rw-reviewer-name {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: .7px;
+}
+.rw-reviewer-place {
+    margin: 6px 0 0 0;
+    color: #6F7074;
+    font-family: 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+/* Buttons */
+.rw-next-btn {
+    margin: 0 8px 0 0;
+    color: black;
+    border: 1px solid transparent;
+    background-color: transparent;
+    outline: transparent;
+    font-size: 28px;
+    cursor: pointer;
+}
+.rw-next-btn:hover {
+    color: #178BFF;
+}
