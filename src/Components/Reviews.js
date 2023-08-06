@@ -1,5 +1,4 @@
 import React from "react";
-import ReviewPic from "../Assets/reviews.png";
 import "../Styles/Reviews.css";
 
 function Reviews() {
