@@ -24,7 +24,9 @@ function Footer() {
               className="ft-input"
               placeholder="Enter your email address"
             />
-            <button className="ft-btn">Subscribe</button>
+            <button className="ft-btn" type="button">
+              Subscribe
+            </button>
           </div>
         </div>
 
@@ -66,7 +68,7 @@ function Footer() {
 
         <ul className="ft-social-links">
           <li>
-            <a href="https://linkedin.com/in/Alkaison/">
+            <a href="https://linkedin.com/in/Alkaison/" title="LinkedIn">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="1em"
@@ -78,7 +80,7 @@ function Footer() {
           </li>
 
           <li>
-            <a href="https://facebook.com/">
+            <a href="https://facebook.com/" title="FaceBook">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="1em"
@@ -90,7 +92,7 @@ function Footer() {
           </li>
 
           <li>
-            <a href="https://x.com/Alkaison/">
+            <a href="https://x.com/Alkaison/" title="Twitter">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="1em"

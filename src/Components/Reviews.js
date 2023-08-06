@@ -33,8 +33,12 @@ function Reviews() {
           </div>
 
           <div className="rw-btns">
-            <button className="rw-next-btn">←</button>
-            <button className="rw-next-btn">→</button>
+            <button className="rw-next-btn" type="button">
+              ←
+            </button>
+            <button className="rw-next-btn" type="button">
+              →
+            </button>
           </div>
         </div>
       </div>
