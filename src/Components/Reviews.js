@@ -5,10 +5,6 @@ import "../Styles/Reviews.css";
 function Reviews() {
   return (
     <div className="review-section">
-      <div className="rw-image-content">
-        <img src={ReviewPic} alt="Doctor Group" className="rw-image1" />
-      </div>
-
       <div className="rw-text-content">
         <p className="rw-text-title">
           More over <span className="rw-text-num">1500+ Customers</span>
