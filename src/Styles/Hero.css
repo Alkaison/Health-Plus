@@ -78,12 +78,12 @@
     font-weight: bold;
 }
 /* Image section */
-.image-section {
+.hero-image-section {
     width: 40%;
     max-width: 100%;
     text-align: center;
 }
-.image1 {
+.hero-image1 {
     width: 100%;
     height: auto;
 }

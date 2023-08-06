@@ -11,7 +11,7 @@ function BookAppointment() {
   return (
     <div className="ba-section">
       <div className="ba-image-content">
-        <img src={Doctor} alt="Doctor Group" className="image1" />
+        <img src={Doctor} alt="Doctor Group" className="ba-image1" />
       </div>
 
       <div className="ba-text-content">
