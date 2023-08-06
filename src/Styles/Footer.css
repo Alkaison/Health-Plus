@@ -1,11 +1,16 @@
+.footer-section {
+    background-color: #1B2433;
+}
 .footer-container {
     height: auto;
-    padding: 40px;
+    padding: 40px 0;
+    margin: 0 40px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     color: white;
-    background-color: #1B2433;
+    border-bottom: 2px solid #293241;
+    border-radius: 2px;
     /* border: 1px solid red; */
 }
 /* Title */
@@ -91,7 +96,42 @@
 }
 /* CopyRight */
 .ft-copyright {
+    padding: 24px 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: #cbcdd3;
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: .7px;
+}
+.ft-social-links {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+.ft-social-links li a {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #cbcdd3;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.ft-social-links li a svg {
+    width: 24px;
+    height: 24px;
+    padding: 1px;
+}
+.ft-social-links li a svg path {
+    fill: #cbcdd3;
+}
+.ft-social-links li a:hover, .ft-social-links li a:hover svg path {
+    fill: #1A8EFD;
+    border: 2px solid #1A8EFD;
 }
