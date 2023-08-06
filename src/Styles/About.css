@@ -1,6 +1,6 @@
 .about-section {
-    height: 100vh;
-    padding: 0 32px;
+    /* height: 100vh; */
+    padding: 32px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,8 +13,8 @@
     max-width: 100%;
     text-align: center;
 }
-.image1 {
-    width: 100%;
+.about-image1 {
+    width: 80%;
     height: auto;
 }
 /* Text */
@@ -61,6 +61,7 @@
     font-family: 'Trebuchet MS', sans-serif;
     font-size: 18px;
     font-weight: bold;
+    letter-spacing: .7px;
 }
 .about-text-description {
     margin: 8px 24px;
@@ -71,4 +72,22 @@
 }
 .fa-icon {
     color: #9D2553;
+}
+/* Responsive */
+@media screen and (max-width: 1000px) {
+    .about-section {
+        display: block;
+    }
+    .about-image-content {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 0 32px 0;
+    }
+    .about-image1 {
+        width: 100%;
+        height: 100%;
+    }
+    .about-text-content {
+        width: 100%;
+    }
 }
