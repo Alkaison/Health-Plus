@@ -2,16 +2,15 @@
     background-color: #1B2433;
 }
 .footer-container {
-    height: auto;
-    padding: 40px 0;
-    margin: 0 40px;
+    padding: 40px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
+    gap: 12px;
     color: white;
     border-bottom: 2px solid #293241;
     border-radius: 2px;
-    /* border: 1px solid red; */
 }
 /* Title */
 .ft-title {
@@ -134,4 +133,30 @@
 .ft-social-links li a:hover, .ft-social-links li a:hover svg path {
     fill: #1A8EFD;
     border: 2px solid #1A8EFD;
+}
+/* Responsive */
+@media screen and (max-width: 700px) {
+    .footer-container {
+        padding: 24px;
+    }
+    .ft-description {
+        width: 100%;
+        margin: 16px 0 24px;
+    }
+    .ft-input {
+        width: 100%;
+        margin: 16px 0;
+    }
+    .ft-btn {
+        width: 100%;
+        margin: 0 0 16px;
+    }
+    .ft-copyright {
+        padding: 18px;
+        display: block;
+        text-align: center;
+    }
+    .ft-social-links {
+        margin: 16px 0 0;
+    }
 }
