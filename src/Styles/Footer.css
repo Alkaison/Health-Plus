@@ -85,13 +85,22 @@
 .ft-list-items {
     list-style-type: none;
 }
+.ft-list-items li a {
+    text-decoration: none;
+    color: #a5a7ac;
+    padding: 0 0 2px 0;
+    border-bottom: 2px dotted transparent;
+    transition: border .2s ease;
+}
 .ft-list-items li {
     margin: 24px 0;
-    color: #a5a7ac;
     font-family: 'Trebuchet MS', sans-serif;
     font-size: 18px;
     font-weight: bold;
     letter-spacing: .7px;
+}
+.ft-list-items li a:hover {
+    border-bottom: 2px dotted #a5a7ac;
 }
 /* CopyRight */
 .ft-copyright {

@@ -21,6 +21,7 @@ function Footer() {
             <p className="ft-input-title">Stay Update to our Newsletter</p>
             <input
               type="text"
+              inputMode="email"
               className="ft-input"
               placeholder="Enter your email address"
             />
@@ -33,32 +34,62 @@ function Footer() {
         <div className="ft-list">
           <p className="ft-list-title">Services</p>
           <ul className="ft-list-items">
-            <li>Emergency Care</li>
-            <li>Heart Disease</li>
-            <li>Dental Care</li>
-            <li>Prescription</li>
-            <li>Insights for doctors</li>
+            <li>
+              <a href="/#services">Emergency Care</a>
+            </li>
+            <li>
+              <a href="/#services">Heart Disease</a>
+            </li>
+            <li>
+              <a href="/#services">Dental Care</a>
+            </li>
+            <li>
+              <a href="/#services">Prescription</a>
+            </li>
+            <li>
+              <a href="/#services">Insights for doctors</a>
+            </li>
           </ul>
         </div>
 
         <div className="ft-list">
           <p className="ft-list-title">Legal</p>
           <ul className="ft-list-items">
-            <li>General Info</li>
-            <li>Privacy Policy</li>
-            <li>Terms of Services</li>
-            <li>Consultations</li>
-            <li>How it Works</li>
+            <li>
+              <a href="/legal">General Info</a>
+            </li>
+            <li>
+              <a href="/legal">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="/legal">Terms of Services</a>
+            </li>
+            <li>
+              <a href="/legal">Consultations</a>
+            </li>
+            <li>
+              <a href="/legal">How it Works</a>
+            </li>
           </ul>
         </div>
 
         <div className="ft-list">
           <p className="ft-list-title">Talk To Us</p>
           <ul className="ft-list-items">
-            <li>support@healthplus.com</li>
-            <li>appointment@healthplus.com</li>
-            <li>+022 5454 5252</li>
-            <li>+022 2326 6232</li>
+            <li>
+              <a href="mailto:support@healthplus.com">support@healthplus.com</a>
+            </li>
+            <li>
+              <a href="mailto:appointment@healthplus.com">
+                appointment@healthplus.com
+              </a>
+            </li>
+            <li>
+              <a href="tel:+022 5454 5252">+022 5454 5252</a>
+            </li>
+            <li>
+              <a href="tel:+022 2326 6232">+022 2326 6232</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -68,7 +99,12 @@ function Footer() {
 
         <ul className="ft-social-links">
           <li>
-            <a href="https://linkedin.com/in/Alkaison/" title="LinkedIn">
+            <a
+              href="https://linkedin.com/in/Alkaison/"
+              title="LinkedIn"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="1em"
@@ -80,7 +116,12 @@ function Footer() {
           </li>
 
           <li>
-            <a href="https://facebook.com/" title="FaceBook">
+            <a
+              href="https://facebook.com/"
+              title="FaceBook"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="1em"
@@ -92,7 +133,12 @@ function Footer() {
           </li>
 
           <li>
-            <a href="https://x.com/Alkaison/" title="Twitter">
+            <a
+              href="https://x.com/Alkaison/"
+              title="Twitter"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 height="1em"
