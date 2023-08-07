@@ -12,7 +12,7 @@ function Doctors() {
     <div className="doctor-section">
       <div className="dt-title-content">
         <h3 className="dt-title">
-          <span>Meet Our Specialist Doctors</span>
+          <span>Meet Our Doctors</span>
         </h3>
         <p className="dt-description">
           Meet our exceptional team of specialist doctors, dedicated to
