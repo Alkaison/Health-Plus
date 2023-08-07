@@ -1,5 +1,6 @@
 import React from "react";
 import "../Styles/Footer.css";
+import SubscribeNewsletter from "./SubscribeNewsletter";
 
 function Footer() {
   return (
@@ -17,18 +18,7 @@ function Footer() {
             </p>
           </div>
 
-          <div className="ft-info-p2">
-            <p className="ft-input-title">Stay Update to our Newsletter</p>
-            <input
-              type="text"
-              inputMode="email"
-              className="ft-input"
-              placeholder="Enter your email address"
-            />
-            <button className="ft-btn" type="button">
-              Subscribe
-            </button>
-          </div>
+          <SubscribeNewsletter />
         </div>
 
         <div className="ft-list">
