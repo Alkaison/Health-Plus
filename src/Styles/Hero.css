@@ -1,6 +1,6 @@
 .hero-section {
-    height: calc(100vh - 80px);
-    padding: 0 32px;
+    min-height: calc(100vh - 80px);
+    padding: 32px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,7 +59,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    gap: 64px;
+    gap: 48px;
 }
 .text-stats-container {
     text-align: center;
@@ -108,4 +108,40 @@
 }  
 .show-scroll {
   display: flex;
+}
+/* Responsive */
+@media screen and (max-width: 900px) {
+    .hero-image-section {
+        display: none;
+    }
+    .text-section {
+        width: 100%;
+        padding: 0;
+    }
+    .text-title, .text-descritpion {
+        width: 100%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .text-headline {
+        font-size: 20px;
+    }
+    .text-title {
+        font-size: 28px;
+    }
+    .text-descritpion {
+        font-size: 16px;
+    }
+    .text-appointment-btn {
+        font-size: 16px;
+    }
+    .text-stats {
+        gap: 18px;
+    }
+    .text-stats-container > p {
+        font-size: 16px;
+    }
+    .text-stats-container p:first-child {
+        font-size: 22px;
+    }
 }
