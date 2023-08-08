@@ -1,5 +1,4 @@
 .about-section {
-    /* height: 100vh; */
     padding: 32px;
     display: flex;
     justify-content: center;
@@ -22,8 +21,9 @@
     width: 50%;
 }
 .about-title {
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 40px;
+    font-weight: bold;
 }
 .about-title > span {
     position: relative;
@@ -41,24 +41,25 @@
 .about-description {
     margin: 32px 0;
     color: #4d4b4b;
-    font-family: 'Trebuchet MS', sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-size: 18px;
-    letter-spacing: .5px;
-    line-height: 1.5rem;
+    letter-spacing: .7px;
+    line-height: 1.7rem;
 }
 .about-text-title {
     margin: 0 0 24px 0;
     color: #4d4b4b;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 24px;
     font-weight: bold;
+    letter-spacing: .7px;
 }
 /* Steps */
 .about-text-step {
     margin: 16px 0;
 }
 .about-text-sTitle {
-    font-family: 'Trebuchet MS', sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-size: 18px;
     font-weight: bold;
     letter-spacing: .7px;
@@ -66,9 +67,9 @@
 .about-text-description {
     margin: 8px 24px;
     color: #4d4b4b;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Rubik', sans-serif;
     letter-spacing: .7px;
-    line-height: 1.4rem;
+    line-height: 1.6rem;
 }
 .fa-icon {
     color: #9D2553;

@@ -16,10 +16,10 @@
 .ft-title {
     color: #1A8EFD;
     text-decoration: none;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 40px;
     font-weight: bold;
-    letter-spacing: .7px;
+    letter-spacing: .8px;
 }
 .ft-sign {
     color: #1ECAB0;
@@ -31,40 +31,40 @@
     width: 420px;
     margin: 16px 0 40px;
     color: #D0D3DA;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 22px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;
     letter-spacing: .8px;
-    line-height: 1.9rem;
+    line-height: 1.7rem;
 }
 .ft-input-title {
     color: white;
-    font-family: 'Segoe UI', sans-serif;
-    font-size: 24px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 22px;
     font-weight: bold;
     letter-spacing: .8px;
 }
 .ft-input {
     width: 300px;
     margin: 20px 8px 0 0;
-    padding: 15px 22px;
+    padding: 16px 22px;
     color: white;
     background-color: #293241;
     border: 1px solid transparent;
     border-radius: 50px;
     outline: transparent;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Rubik', sans-serif;
     font-size: 18px;
-    letter-spacing: .7px;
+    letter-spacing: .8px;
 }
 .ft-btn {
-    padding: 12px 18px;
+    padding: 14px 18px;
     color: white;
     border: 2px solid transparent;
     border-radius: 50px;
     outline: transparent;
     background-color: #1A8EFD;
     font-size: 18px;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Rubik', sans-serif;
     letter-spacing: .8px;
     cursor: pointer;
     transition: all .4s ease;
@@ -77,10 +77,10 @@
 /* Lists */
 .ft-list-title {
     margin: 16px 0;
-    font-family: 'Trebuchet MS', sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-size: 24px;
     font-weight: bold;
-    letter-spacing: .7px;
+    letter-spacing: .8px;
 }
 .ft-list-items {
     list-style-type: none;
@@ -94,10 +94,10 @@
 }
 .ft-list-items li {
     margin: 24px 0;
-    font-family: 'Trebuchet MS', sans-serif;
-    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
     font-weight: bold;
-    letter-spacing: .7px;
+    letter-spacing: .8px;
 }
 .ft-list-items li a:hover {
     border-bottom: 2px dotted #a5a7ac;
@@ -109,10 +109,10 @@
     justify-content: space-between;
     align-items: center;
     color: #cbcdd3;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-size: 18px;
     font-weight: bold;
-    letter-spacing: .7px;
+    letter-spacing: .8px;
 }
 .ft-social-links {
     list-style-type: none;

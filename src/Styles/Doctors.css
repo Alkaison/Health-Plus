@@ -8,8 +8,10 @@
     margin: 0 0 64px 0;
 }
 .dt-title {
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 40px;
+    font-weight: bold;
+    letter-spacing: .7px;
 }
 .dt-title > span {
     position: relative;
@@ -28,10 +30,10 @@
     margin: 64px auto 0;
     text-align: center;
     color: rgb(77, 75, 75);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Rubik', sans-serif;
     font-size: 20px;
-    letter-spacing: .7px;
-    line-height: 1.6rem;
+    letter-spacing: .8px;
+    line-height: 1.8rem;
 }
 /* Doctor Cards */
 .dt-cards-content {
@@ -47,7 +49,7 @@
     height: 400px;
     gap: 32px;
     text-align: left;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 .dt-card-img {
     width: 100%;
@@ -66,9 +68,9 @@
 .dt-card-title {
     margin: 6px 0 8px;
     color: #494949;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 18px;
-    letter-spacing: .5px;
+    letter-spacing: .7px;
 }
 .dt-card-stars {
     font-size: 18px;

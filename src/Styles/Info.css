@@ -7,8 +7,9 @@
     margin: 64px 0 128px 0;
 }
 .info-title {
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 40px;
+    font-weight: bold;
 }
 .info-title > span {
     position: relative;
@@ -27,10 +28,10 @@
     margin: 64px;
     text-align: center;
     color: rgb(77, 75, 75);
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 20px;
-    letter-spacing: .7px;
-    line-height: 1.6rem;
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    letter-spacing: .8px;
+    line-height: 1.8rem;
 }
 /* Cards */
 .info-cards-content {
@@ -49,17 +50,17 @@
 .info-card-title {
     margin: 32px 0 40px 0;
     color: black;
-    font-family: 'Segoe UI', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 28px;
     font-weight: bold;
-    letter-spacing: .7px;
+    letter-spacing: .8px;
 }
 .info-card-description {
     margin: 24px;
     color: rgb(77, 75, 75);
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Rubik', sans-serif;
     font-size: 18px;
-    letter-spacing: .7px;
+    letter-spacing: .8px;
     line-height: 1.5rem;
 }
 .info-card-icon {
@@ -76,9 +77,6 @@
 }
 /* Responsive */
 @media screen and (max-width: 1000px) {
-    .info-card-title {
-        font-weight: normal;
-    }
     .info-description {
         margin: 64px 32px;
     }
