@@ -14,9 +14,8 @@ function Hero() {
         </h2>
         <p className="text-descritpion">
           Talk to online doctors and get medical advice, online prescriptions,
-          refills and medical notes within minutes.
-          <br />
-          On-demand healthcare services at your fingertips.
+          refills and medical notes within minutes. On-demand healthcare
+          services at your fingertips.
         </p>
         <button className="text-appointment-btn" type="button">
           <FontAwesomeIcon icon={faCalendarCheck} /> Book Appointment

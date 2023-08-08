@@ -1,7 +1,6 @@
 import React from "react";
 import Doctor from "../Assets/doctor-group.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleChevronDown } from "@fortawesome/free-solid-svg-icons";
+import SolutionStep from "./SolutionStep";
 import "../Styles/About.css";
 
 function About() {
@@ -28,7 +27,7 @@ function About() {
           title="Choose a Specialist"
           description="Find your perfect specialist and book with ease at Health Plus. Expert doctors prioritize your health, offering tailored care."
         />
-        
+
         <SolutionStep
           title="Make a Schedule"
           description="Choose the date and time that suits you best, and let our dedicated team of medical professionals ensure your well-being with personalized care."
@@ -39,20 +38,6 @@ function About() {
           description="Our experienced doctors and specialists are here to provide expert advice and personalized treatment plans, helping you achieve your best possible health."
         />
       </div>
-    </div>
-  );
-}
-
-function SolutionStep(props) {
-  return (
-    <div className="about-text-step">
-      <p className="about-text-sTitle">
-        <span>
-          <FontAwesomeIcon className="fa-icon" icon={faCircleChevronDown} />{" "}
-          {props.title}
-        </span>
-      </p>
-      <p className="about-text-description">{props.description}</p>
     </div>
   );
 }
