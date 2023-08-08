@@ -5,7 +5,7 @@ import "../Styles/Info.css";
 
 function Info() {
   return (
-    <div className="info-section">
+    <div className="info-section" id="services">
       <div className="info-title-content">
         <h3 className="info-title">
           <span>What We Do</span>

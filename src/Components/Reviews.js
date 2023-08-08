@@ -31,7 +31,7 @@ function Reviews() {
   handleReviewsUpdation();
 
   return (
-    <div className="review-section">
+    <div className="review-section" id="reviews">
       <div className="rw-text-content">
         <p className="rw-text-title">
           More over <span className="rw-text-num">1500+ Customers</span>

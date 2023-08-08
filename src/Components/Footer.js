@@ -63,7 +63,7 @@ function Footer() {
           </ul>
         </div>
 
-        <div className="ft-list">
+        <div className="ft-list" id="contact">
           <p className="ft-list-title">Talk To Us</p>
           <ul className="ft-list-items">
             <li>

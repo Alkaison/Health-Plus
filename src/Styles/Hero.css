@@ -1,5 +1,4 @@
 .hero-section {
-    min-height: calc(100vh - 80px);
     padding: 32px;
     display: flex;
     justify-content: center;
@@ -143,5 +142,9 @@
     }
     .text-stats-container p:first-child {
         font-size: 22px;
+    }
+    .scroll-up {
+        bottom: 32px;
+        right: 32px;
     }
 }

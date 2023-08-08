@@ -8,7 +8,7 @@ import "../Styles/Doctors.css";
 
 function Doctors() {
   return (
-    <div className="doctor-section">
+    <div className="doctor-section" id="doctors">
       <div className="dt-title-content">
         <h3 className="dt-title">
           <span>Meet Our Doctors</span>
