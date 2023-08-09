@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Health-Plus/static/css/main.9e975787.css",
-    "main.js": "/Health-Plus/static/js/main.cb735e83.js",
+    "main.js": "/Health-Plus/static/js/main.d4338041.js",
     "static/media/profile-2.png": "/Health-Plus/static/media/profile-2.4752a9db34458eeffcfa.png",
     "static/media/doctor-picture.png": "/Health-Plus/static/media/doctor-picture.0261bb4efe7a9075c56a.png",
     "static/media/profile-1.png": "/Health-Plus/static/media/profile-1.0261bb4efe7a9075c56a.png",
@@ -11,10 +11,10 @@
     "static/media/profile-4.png": "/Health-Plus/static/media/profile-4.3c44185ab9c84614038f.png",
     "index.html": "/Health-Plus/index.html",
     "main.9e975787.css.map": "/Health-Plus/static/css/main.9e975787.css.map",
-    "main.cb735e83.js.map": "/Health-Plus/static/js/main.cb735e83.js.map"
+    "main.d4338041.js.map": "/Health-Plus/static/js/main.d4338041.js.map"
   },
   "entrypoints": [
     "static/css/main.9e975787.css",
-    "static/js/main.cb735e83.js"
+    "static/js/main.d4338041.js"
   ]
 }
