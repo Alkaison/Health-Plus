@@ -1,11 +1,8 @@
 import React from "react";
+import LegalDocs from "../Components/LegalDocs";
 
 function Legal() {
-  return (
-    <div>
-      <h1>Legal</h1>
-    </div>
-  );
+  return <LegalDocs />;
 }
 
 export default Legal;
