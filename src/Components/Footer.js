@@ -1,6 +1,7 @@
 import React from "react";
 import "../Styles/Footer.css";
 import SubscribeNewsletter from "./SubscribeNewsletter";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -25,19 +26,19 @@ function Footer() {
           <p className="ft-list-title">Services</p>
           <ul className="ft-list-items">
             <li>
-              <a href="/#services">Emergency Care</a>
+              <a href="#services">Emergency Care</a>
             </li>
             <li>
-              <a href="/#services">Heart Disease</a>
+              <a href="#services">Heart Disease</a>
             </li>
             <li>
-              <a href="/#services">Dental Care</a>
+              <a href="#services">Dental Care</a>
             </li>
             <li>
-              <a href="/#services">Prescription</a>
+              <a href="#services">Prescription</a>
             </li>
             <li>
-              <a href="/#services">Insights for doctors</a>
+              <a href="#services">Insights for doctors</a>
             </li>
           </ul>
         </div>
@@ -46,19 +47,19 @@ function Footer() {
           <p className="ft-list-title">Legal</p>
           <ul className="ft-list-items">
             <li>
-              <a href="/legal">General Info</a>
+              <Link to={"/legal"}>General Info</Link>
             </li>
             <li>
-              <a href="/legal">Privacy Policy</a>
+              <Link to={"/legal"}>Privacy Policy</Link>
             </li>
             <li>
-              <a href="/legal">Terms of Services</a>
+              <Link to={"/legal"}>Terms of Services</Link>
             </li>
             <li>
-              <a href="/legal">Consultations</a>
+              <Link to={"/legal"}>Consultations</Link>
             </li>
             <li>
-              <a href="/legal">How it Works</a>
+              <Link to={"/legal"}>How it Works</Link>
             </li>
           </ul>
         </div>
