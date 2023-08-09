@@ -6,6 +6,8 @@ import {
   faXmark,
 } from "@fortawesome/free-solid-svg-icons";
 import "../Styles/Navbar.css";
+import { Link } from "react-router-dom";
+import { toast } from "react-toastify";
 
 function Navbar() {
   const [nav, setNav] = useState(false);
@@ -14,20 +16,26 @@ function Navbar() {
     setNav(!nav);
   };
 
+  const popMessage = () => {
+    toast.info("Experiencing high traffic, Please wait a moment.", {
+      position: toast.POSITION.TOP_CENTER,
+    });
+  };
+
   return (
     <div className="navbar-section">
       <h1 className="navbar-title">
-        <a href="/">
+        <Link to="/">
           Health <span className="navbar-sign">+</span>
-        </a>
+        </Link>
       </h1>
 
       {/* Desktop */}
       <ul className="navbar-items">
         <li>
-          <a href="/" className="navbar-links">
+          <Link to="/" className="navbar-links">
             Home
-          </a>
+          </Link>
         </li>
         <li>
           <a href="#services" className="navbar-links">
@@ -51,7 +59,7 @@ function Navbar() {
         </li>
       </ul>
 
-      <button className="navbar-btn" type="button">
+      <button className="navbar-btn" type="button" onClick={popMessage}>
         <FontAwesomeIcon icon={faCommentDots} /> Live Chat
       </button>
 
@@ -63,9 +71,9 @@ function Navbar() {
 
         <ul className="mobile-navbar-links">
           <li>
-            <a onClick={openNav} href="/">
+            <Link onClick={openNav} to="/">
               Home
-            </a>
+            </Link>
           </li>
           <li>
             <a onClick={openNav} href="#services">

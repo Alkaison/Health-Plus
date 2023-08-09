@@ -32,7 +32,7 @@ function SubscribeNewsletter() {
         Subscribe
       </button>
 
-      <ToastContainer autoClose={2000} limit={1} closeButton={false} />
+      <ToastContainer autoClose={4000} limit={1} closeButton={false} />
     </div>
   );
 }
