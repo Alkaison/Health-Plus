@@ -5,9 +5,11 @@ import { ToastContainer, toast } from "react-toastify";
 
 function AppointmentForm() {
   const [patientName, setPatientName] = useState("");
+  const [patientNumber, setPatientNumber] = useState("");
   const [patientGender, setPatientGender] = useState("default");
   const [appointmentTime, setAppointmentTime] = useState("");
   const [preferredMode, setPreferredMode] = useState("default");
+  const [isSubmitted, setIsSubmitted] = useState(false);
   const [formErrors, setFormErrors] = useState({});
 
   const handleSubmit = (e) => {
@@ -20,6 +22,13 @@ function AppointmentForm() {
     } else if (patientName.trim().length < 8) {
       errors.patientName = "Patient name must be at least 8 characters";
     }
+
+    if (!patientNumber.trim()) {
+      errors.patientNumber = "Patient phone number is required";
+    } else if (patientNumber.trim().length !== 10) {
+      errors.patientNumber = "Patient phone number must be of 10 digits";
+    }
+
     if (patientGender === "default") {
       errors.patientGender = "Please select patient gender";
     }
@@ -43,6 +52,7 @@ function AppointmentForm() {
 
     // Reset form fields and errors after successful submission
     setPatientName("");
+    setPatientNumber("");
     setPatientGender("default");
     setAppointmentTime("");
     setPreferredMode("default");
@@ -50,6 +60,8 @@ function AppointmentForm() {
 
     toast.success("Appointment Scheduled !", {
       position: toast.POSITION.TOP_CENTER,
+      onOpen: () => setIsSubmitted(true),
+      onClose: () => setIsSubmitted(false),
     });
   };
 
@@ -76,6 +88,18 @@ function AppointmentForm() {
               required
             />
             {formErrors.patientName && <p className="error-message">{formErrors.patientName}</p>}
+          </label>
+
+          <br />
+          <label>
+            Patient Phone Number:
+            <input
+              type="text"
+              value={patientNumber}
+              onChange={(e) => setPatientNumber(e.target.value)}
+              required
+            />
+            {formErrors.patientNumber && <p className="error-message">{formErrors.patientNumber}</p>}
           </label>
 
           <br />
@@ -125,6 +149,8 @@ function AppointmentForm() {
           <button type="submit" className="text-appointment-btn">
             Confirm Appointment
           </button>
+
+          <p className="success-message" style={{display: isSubmitted ? "block" : "none"}}>Appointment details has been sent to the patients phone number via SMS.</p>
         </form>
       </div>
 
@@ -132,7 +158,7 @@ function AppointmentForm() {
         <p>© 2013-2023 Health+. All rights reserved.</p>
       </div>
 
-      <ToastContainer autoClose={4000} limit={1} closeButton={false} />
+      <ToastContainer autoClose={5000} limit={1} closeButton={false} />
     </div>
   );
 }

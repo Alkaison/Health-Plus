@@ -51,12 +51,22 @@
     font-size: 18px;
     letter-spacing: .7px;
 }
+/* Success Message */
+.success-message {
+    margin: 20px 0 0 0;
+    color: green;
+    font-family: 'Rubik', sans-serif;
+    font-size: 22px;
+    letter-spacing: .7px;
+    line-height: 1.7rem;
+}
 /* Error Message */
 .error-message {
     color: red;
     font-family: 'Rubik', sans-serif;
     font-size: 16px;
     letter-spacing: .7px;
+    line-height: 1.7rem;
 }
 /* Responsive */
 @media screen and (max-width: 600px) {
@@ -71,5 +81,9 @@
     }
     .form-content label :is(input, select) {
         font-size: 16px;
+    }
+    .success-message {
+        margin: 12px 0 0 0;
+        font-size: 18px;
     }
 }
