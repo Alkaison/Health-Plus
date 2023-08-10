@@ -11,15 +11,20 @@ import { toast } from "react-toastify";
 
 function Navbar() {
   const [nav, setNav] = useState(false);
+  const [isButtonDisabled, setIsButtonDisabled] = useState(false);
 
   const openNav = () => {
     setNav(!nav);
   };
 
-  const popMessage = () => {
-    toast.info("Experiencing high traffic, Please wait a moment.", {
-      position: toast.POSITION.TOP_CENTER,
-    });
+  const handleChatBtnClick = () => {
+    if (!isButtonDisabled) {
+      toast.info("Experiencing high traffic, Please wait a moment.", {
+        position: toast.POSITION.TOP_CENTER,
+        onOpen: () => setIsButtonDisabled(true),
+        onClose: () => setIsButtonDisabled(false),
+      });
+    }
   };
 
   return (
@@ -59,7 +64,12 @@ function Navbar() {
         </li>
       </ul>
 
-      <button className="navbar-btn" type="button" onClick={popMessage}>
+      <button
+        className="navbar-btn"
+        type="button"
+        disabled={isButtonDisabled}
+        onClick={handleChatBtnClick}
+      >
         <FontAwesomeIcon icon={faCommentDots} /> Live Chat
       </button>
 

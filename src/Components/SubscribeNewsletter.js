@@ -1,22 +1,30 @@
-import React from "react";
+import React, { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 function SubscribeNewsletter() {
-  const isValidEmail = () => {
-    const inputEmail = document.querySelector(".ft-input").value;
-    const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
-    notify(emailRegex.test(inputEmail));
+  const [inputEmail, setInputEmail] = useState("");
+  const [isButtonDisabled, setIsButtonDisabled] = useState(false);
+  const emailRegex = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$/;
+
+  const handleEmailInput = (event) => {
+    setInputEmail(event.target.value);
   };
 
-  const notify = (value) => {
-    value
-      ? toast.success("Subscribed to Newsletter !", {
-          position: toast.POSITION.TOP_CENTER,
-        })
-      : toast.error("Invalid Email Address !", {
-          position: toast.POSITION.TOP_CENTER,
-        });
+  const handleBookAppointmentClick = () => {
+    if (!isButtonDisabled) {
+      emailRegex.test(inputEmail)
+        ? toast.success("Subscribed to Newsletter !", {
+            position: toast.POSITION.TOP_CENTER,
+            onOpen: () => setIsButtonDisabled(true),
+            onClose: () => setIsButtonDisabled(false),
+          })
+        : toast.error("Invalid Email Address !", {
+            position: toast.POSITION.TOP_CENTER,
+            onOpen: () => setIsButtonDisabled(true),
+            onClose: () => setIsButtonDisabled(false),
+          });
+    }
   };
 
   return (
@@ -27,8 +35,14 @@ function SubscribeNewsletter() {
         inputMode="email"
         className="ft-input"
         placeholder="Enter your email address"
+        onChange={handleEmailInput}
       />
-      <button className="ft-btn" type="button" onClick={isValidEmail}>
+      <button
+        className="text-appointment-btn"
+        type="button"
+        disabled={isButtonDisabled}
+        onClick={handleBookAppointmentClick}
+      >
         Subscribe
       </button>
 
