@@ -5,9 +5,16 @@ import {
   faCircleCheck,
   faCalendarCheck,
 } from "@fortawesome/free-solid-svg-icons";
+import { useNavigate  } from "react-router-dom";
 import "../Styles/BookAppointment.css";
 
 function BookAppointment() {
+  const navigate = useNavigate();
+
+  const handleBookAppointmentClick = () => {
+    navigate("/appointment");
+  };
+
   return (
     <div className="ba-section">
       <div className="ba-image-content">
@@ -38,7 +45,11 @@ function BookAppointment() {
           <FontAwesomeIcon icon={faCircleCheck} style={{ color: "#1E8FFD" }} /> Enrollment Easy and Quick
         </p>
 
-        <button type="button" className="ba-appointment-btn">
+        <button
+          className="text-appointment-btn"
+          type="button"
+          onClick={handleBookAppointmentClick}
+        >
           <FontAwesomeIcon icon={faCalendarCheck} /> Book Appointment
         </button>
       </div>

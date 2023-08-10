@@ -2,13 +2,19 @@ import React, { useEffect, useState } from "react";
 import Doctor from "../Assets/doctor-picture.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCalendarCheck, faAngleUp } from "@fortawesome/free-solid-svg-icons";
+import { useNavigate  } from "react-router-dom";
 import "../Styles/Hero.css";
 
 function Hero() {
+  const navigate = useNavigate();
   const [goUp, setGoUp] = useState(false);
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
+  const handleBookAppointmentClick = () => {
+    navigate("/appointment");
   };
 
   useEffect(() => {
@@ -39,7 +45,11 @@ function Hero() {
             refills and medical notes within minutes. On-demand healthcare
             services at your fingertips.
           </p>
-          <button className="text-appointment-btn" type="button">
+          <button
+            className="text-appointment-btn"
+            type="button"
+            onClick={handleBookAppointmentClick}
+          >
             <FontAwesomeIcon icon={faCalendarCheck} /> Book Appointment
           </button>
           <div className="text-stats">
