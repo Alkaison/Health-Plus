@@ -16,7 +16,10 @@ function SubscribeNewsletter() {
       emailRegex.test(inputEmail)
         ? toast.success("Subscribed to Newsletter !", {
             position: toast.POSITION.TOP_CENTER,
-            onOpen: () => setIsButtonDisabled(true),
+            onOpen: () => {
+              setIsButtonDisabled(true);
+              setInputEmail("");
+            },
             onClose: () => setIsButtonDisabled(false),
           })
         : toast.error("Invalid Email Address !", {
@@ -35,6 +38,7 @@ function SubscribeNewsletter() {
         inputMode="email"
         className="ft-input"
         placeholder="Enter your email address"
+        value={inputEmail}
         onChange={handleEmailInput}
       />
       <button
