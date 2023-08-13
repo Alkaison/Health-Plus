@@ -1,9 +1,13 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../Styles/AppointmentForm.css";
 import { ToastContainer, toast } from "react-toastify";
 
 function AppointmentForm() {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+
   const [patientName, setPatientName] = useState("");
   const [patientNumber, setPatientNumber] = useState("");
   const [patientGender, setPatientGender] = useState("default");
