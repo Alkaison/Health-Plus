@@ -41,6 +41,7 @@ function SubscribeNewsletter() {
         name="email"
         value={inputEmail}
         onChange={handleEmailInput}
+        autoComplete="true"
       />
       <button
         className="text-appointment-btn"
