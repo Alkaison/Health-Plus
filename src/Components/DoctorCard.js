@@ -15,7 +15,13 @@ function DoctorCard(props) {
         />
         {props.stars}
         <span className="dt-card-reviews"> ({props.reviews}+ Reviews)</span>
+        
       </p>
+      <button
+          className="text-appointment-btn"
+          type="button"
+        > Learn More..
+      </button>
     </div>
   );
 }
