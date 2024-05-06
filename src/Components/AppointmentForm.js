@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../Styles/AppointmentForm.css";
 import { ToastContainer, toast } from "react-toastify";
+// TODO: Handle API in a better way
+import axios from 'axios';
 
 function AppointmentForm() {
   useEffect(() => {
@@ -16,7 +18,7 @@ function AppointmentForm() {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [formErrors, setFormErrors] = useState({});
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     // Validate form inputs
@@ -29,8 +31,8 @@ function AppointmentForm() {
 
     if (!patientNumber.trim()) {
       errors.patientNumber = "Patient phone number is required";
-    } else if (patientNumber.trim().length !== 10) {
-      errors.patientNumber = "Patient phone number must be of 10 digits";
+    } else if (patientNumber.trim().length < 8) {
+      errors.patientNumber = "Patient phone number must be longer than 8 digits";
     }
 
     if (patientGender === "default") {
@@ -54,19 +56,34 @@ function AppointmentForm() {
       return;
     }
 
-    // Reset form fields and errors after successful submission
-    setPatientName("");
-    setPatientNumber("");
-    setPatientGender("default");
-    setAppointmentTime("");
-    setPreferredMode("default");
-    setFormErrors({});
+    // TODO: Handle API in a better way
 
-    toast.success("Appointment Scheduled !", {
-      position: toast.POSITION.TOP_CENTER,
-      onOpen: () => setIsSubmitted(true),
-      onClose: () => setIsSubmitted(false),
-    });
+    try {
+      const appointmentData = {
+        patientName,
+        patientNumber,
+        patientGender,
+        appointmentTime,
+        preferredMode,
+      };
+      // Make a POST request to your backend endpoint
+      const response = await axios.post('http://localhost:10001/api/health/appointment/create', appointmentData);
+
+      // If the request is successful, show the toast success message
+      if (response.status === 200) {
+        toast.success("Appointment Scheduled !", {
+          position: toast.POSITION.TOP_CENTER,
+          onOpen: () => setIsSubmitted(true),
+          onClose: () => setIsSubmitted(false),
+        });
+      } else {
+        // Handle any non-200 responses here
+        console.error('Failed to schedule appointment:', response);
+      }
+    } catch (error) {
+      // Handle any errors from the request here
+      console.error('Failed to schedule appointment:', error);
+    }
   };
 
   return (
