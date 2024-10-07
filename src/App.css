@@ -7,6 +7,7 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 html {
     scroll-behavior: smooth;
 }
@@ -15,9 +16,11 @@ html {
 ::-webkit-scrollbar {
     width: 8px;
 }
+
 ::-webkit-scrollbar-track {
-    background-color: #FFFFFF;
+    background-color: yellow;
 }
+
 ::-webkit-scrollbar-thumb {
     background-color: #1A8EFD;
     border-radius: 4rem;
