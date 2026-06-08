@@ -64,7 +64,7 @@ function LegalDocs() {
       <div className="legal-footer">
         <p>
           © 2013-2023 Health+. All rights reserved. Built by{" "}
-          <a href="https://github.com/Alkaison" target="_blank" rel="noreferrer">
+          <a href="https://github.com/Alkaison" target="_blank" rel="noreferrer" style={{color: "#1A8EFD"}}>
             Ganesh Maurya
           </a>
         </p>
