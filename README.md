@@ -76,3 +76,9 @@ Contributions are welcome! If you find a bug or have a feature request, please o
 ## License
 
 This project is licensed under the [MIT License](./LICENSE "Project LICENSE").
+# Development Team
+Roles:
+manoj : Dev A
+Shravya: Dev B
+Mohammed: Senior Engineer
+Sharief: Lead
